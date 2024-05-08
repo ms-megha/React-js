@@ -7,7 +7,7 @@ function Tours({tours, removeTour}) {
         <div className="container">
             <h1 className="title">Plan With Me</h1>
         </div>
-        <div className="card">
+        <div className="card-container">
         {
           tours.map((tour) => (
             <Card key={tour.id} {...tour} removeTour={removeTour} />
