@@ -14,7 +14,7 @@ function App() {
     return(
       <div className='refresh'>
         <h2>No Tours left</h2>
-        <button onClick={()=>setTours(data)}>Refresh</button>
+        <button className='white-btn' onClick={()=>setTours(data)}>Refresh</button>
 
       </div>
     );
@@ -22,7 +22,9 @@ function App() {
 
   return (
     <>
+      <div className='app'>
       <Tours tours={tours} removeTour={removeTour}></Tours>
+      </div>
        
     </>
   )
